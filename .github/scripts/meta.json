@@ -1,0 +1,10 @@
+{
+  "sourceUrl": "https://github.com/remirror/remirror",
+  "branch": "main",
+  "docusaurusRoot": "website",
+  "configFile": "website/docusaurus.config.js",
+  "translateCommand": "pnpm exec docusaurus write-translations",
+  "buildCommand": "USE_SIMPLE_CSS_MINIFIER=true pnpm exec docusaurus build",
+  "buildOutput": "build",
+  "packageManager": "pnpm"
+}
