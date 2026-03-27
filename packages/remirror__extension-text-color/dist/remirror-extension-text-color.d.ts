@@ -1,0 +1,14 @@
+export { TextColorExtension } from './_tsup-dts-rollup';
+export { TextColorAttributes } from './_tsup-dts-rollup';
+export { TextColorOptions } from './_tsup-dts-rollup';
+export { SetTextColorOptions } from './_tsup-dts-rollup';
+export { ColorWithLabel } from './_tsup-dts-rollup';
+export { ColorWithLabelTuple } from './_tsup-dts-rollup';
+export { HuePalette } from './_tsup-dts-rollup';
+export { HuePaletteMap } from './_tsup-dts-rollup';
+export { ColorPalette } from './_tsup-dts-rollup';
+export { Palette } from './_tsup-dts-rollup';
+export { palette } from './_tsup-dts-rollup';
+export { setTextColorOptions } from './_tsup-dts-rollup';
+export { CSS_VAR_REGEX } from './_tsup-dts-rollup';
+export { TEXT_COLOR_ATTRIBUTE } from './_tsup-dts-rollup';

@@ -1,0 +1,13 @@
+export { detectLocale } from './_tsup-dts-rollup';
+export { AllLocaleData } from './_tsup-dts-rollup';
+export { AllMessages } from './_tsup-dts-rollup';
+export { I18n } from './_tsup-dts-rollup';
+export { Locale } from './_tsup-dts-rollup';
+export { LocaleData } from './_tsup-dts-rollup';
+export { Locales } from './_tsup-dts-rollup';
+export { MessageDescriptor } from './_tsup-dts-rollup';
+export { Messages } from './_tsup-dts-rollup';
+export { formats } from './_tsup-dts-rollup';
+export { setupI18n } from './_tsup-dts-rollup';
+export { i18n } from './_tsup-dts-rollup';
+export { i18nFormat } from './_tsup-dts-rollup';

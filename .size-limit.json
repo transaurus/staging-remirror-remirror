@@ -1,0 +1,968 @@
+[
+  {
+    "name": "a11y-status",
+    "limit": "1 KB",
+    "path": "packages/a11y-status/dist/a11y-status.js",
+    "ignore": [],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "create-context-state",
+    "limit": "2 KB",
+    "path": "packages/create-context-state/dist/create-context-state.js",
+    "ignore": ["@types/react", "react"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "multishift",
+    "limit": "20 KB",
+    "path": "packages/multishift/dist/multishift.js",
+    "ignore": ["@types/react", "react", "@remirror/core-helpers", "@remirror/core-types"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "prosemirror-paste-rules",
+    "limit": "10 KB",
+    "path": "packages/prosemirror-paste-rules/dist/prosemirror-paste-rules.js",
+    "ignore": [
+      "prosemirror-model",
+      "prosemirror-state",
+      "prosemirror-view",
+      "@remirror/core-constants",
+      "@remirror/core-helpers"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "prosemirror-resizable-view",
+    "limit": "10 KB",
+    "path": "packages/prosemirror-resizable-view/dist/prosemirror-resizable-view.js",
+    "ignore": ["@remirror/core-helpers", "@remirror/core-utils"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "prosemirror-suggest",
+    "limit": "10 KB",
+    "path": "packages/prosemirror-suggest/dist/prosemirror-suggest.js",
+    "ignore": [
+      "prosemirror-model",
+      "prosemirror-state",
+      "prosemirror-view",
+      "@remirror/core-constants",
+      "@remirror/core-helpers",
+      "@remirror/types"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "prosemirror-trailing-node",
+    "limit": "10 KB",
+    "path": "packages/prosemirror-trailing-node/dist/prosemirror-trailing-node.js",
+    "ignore": [
+      "prosemirror-model",
+      "prosemirror-state",
+      "prosemirror-view",
+      "@remirror/core-constants"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/core",
+    "limit": "40 KB",
+    "path": "packages/remirror__core/dist/remirror-core.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core-constants",
+      "@remirror/core-helpers",
+      "@remirror/core-types",
+      "@remirror/core-utils",
+      "@remirror/icons",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/core-constants",
+    "limit": "2 KB",
+    "path": "packages/remirror__core-constants/dist/remirror-core-constants.js",
+    "ignore": [],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/core-types",
+    "limit": "1 kB",
+    "path": "packages/remirror__core-types/dist/remirror-core-types.js",
+    "ignore": ["@remirror/pm", "@remirror/core-constants", "@remirror/types"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/core-utils",
+    "limit": "25 KB",
+    "path": "packages/remirror__core-utils/dist/remirror-core-utils.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/node",
+      "@remirror/core-constants",
+      "@remirror/core-helpers",
+      "@remirror/core-types",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/dom",
+    "limit": "10 KB",
+    "path": "packages/remirror__dom/dist/remirror-dom.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/preset-core"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-annotation",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-annotation/dist/remirror-extension-annotation.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-positioner",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-bidi",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-bidi/dist/remirror-extension-bidi.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-blockquote",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-blockquote/dist/remirror-extension-blockquote.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages", "@remirror/theme"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-bold",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-bold/dist/remirror-extension-bold.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-callout",
+    "limit": "15 KB",
+    "path": "packages/remirror__extension-callout/dist/remirror-extension-callout.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages", "@remirror/theme"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-code",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-code/dist/remirror-extension-code.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-code-block",
+    "limit": "25 KB",
+    "path": "packages/remirror__extension-code-block/dist/remirror-extension-code-block.js",
+    "ignore": [
+      "@remirror/pm",
+      "prettier",
+      "@remirror/core",
+      "@remirror/extension-positioner",
+      "@remirror/messages",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-codemirror5",
+    "limit": "15 KB",
+    "path": "packages/remirror__extension-codemirror5/dist/remirror-extension-codemirror5.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/codemirror",
+      "codemirror",
+      "@remirror/core",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-codemirror6",
+    "limit": "100 KB",
+    "path": "packages/remirror__extension-codemirror6/dist/remirror-extension-codemirror6.js",
+    "ignore": ["@remirror/pm", "@remirror/core"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-collaboration",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-collaboration/dist/remirror-extension-collaboration.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-columns",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-columns/dist/remirror-extension-columns.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-count",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-count/dist/remirror-extension-count.js",
+    "ignore": ["@remirror/pm", "@remirror/core"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-diff",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-diff/dist/remirror-extension-diff.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-doc",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-doc/dist/remirror-extension-doc.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-drop-cursor",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-drop-cursor/dist/remirror-extension-drop-cursor.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-embed",
+    "limit": "20 KB",
+    "path": "packages/remirror__extension-embed/dist/remirror-extension-embed.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-emoji",
+    "limit": "60 KB",
+    "path": "packages/remirror__extension-emoji/dist/remirror-extension-emoji.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages", "@remirror/theme"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-entity-reference",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-entity-reference/dist/remirror-extension-entity-reference.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-events",
+      "@remirror/extension-positioner"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-epic-mode",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-epic-mode/dist/remirror-extension-epic-mode.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-events",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-events/dist/remirror-extension-events.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-file",
+    "limit": "30 KB",
+    "path": "packages/remirror__extension-file/dist/remirror-extension-file.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/react",
+      "@types/react-dom",
+      "react",
+      "react-dom",
+      "@remirror/core",
+      "@remirror/extension-react-component",
+      "@remirror/react-core",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-find",
+    "limit": "25 KB",
+    "path": "packages/remirror__extension-find/dist/remirror-extension-find.js",
+    "ignore": ["@remirror/pm", "@remirror/core"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-font-family",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-font-family/dist/remirror-extension-font-family.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-font-size",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-font-size/dist/remirror-extension-font-size.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-gap-cursor",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-gap-cursor/dist/remirror-extension-gap-cursor.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-hard-break",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-hard-break/dist/remirror-extension-hard-break.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-heading",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-heading/dist/remirror-extension-heading.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-history",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-history/dist/remirror-extension-history.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-horizontal-rule",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-horizontal-rule/dist/remirror-extension-horizontal-rule.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-image",
+    "limit": "20 KB",
+    "path": "packages/remirror__extension-image/dist/remirror-extension-image.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages", "@remirror/theme"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-italic",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-italic/dist/remirror-extension-italic.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-link",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-link/dist/remirror-extension-link.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-events",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-list",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-list/dist/remirror-extension-list.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-events",
+      "@remirror/messages",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-markdown",
+    "limit": "25 KB",
+    "path": "packages/remirror__extension-markdown/dist/remirror-extension-markdown.js",
+    "ignore": [
+      "@remirror/extension-react-tables",
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-mention",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-mention/dist/remirror-extension-mention.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-events",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-mention-atom",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-mention-atom/dist/remirror-extension-mention-atom.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-events",
+      "@remirror/messages",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-node-formatting",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-node-formatting/dist/remirror-extension-node-formatting.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-paragraph",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-paragraph/dist/remirror-extension-paragraph.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-placeholder",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-placeholder/dist/remirror-extension-placeholder.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages", "@remirror/theme"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-positioner",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-positioner/dist/remirror-extension-positioner.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-events",
+      "@remirror/messages",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-react-component",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-react-component/dist/remirror-extension-react-component.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/react",
+      "@types/react-dom",
+      "react",
+      "react-dom",
+      "@remirror/core",
+      "@remirror/core-constants",
+      "@remirror/core-helpers",
+      "@remirror/core-types",
+      "@remirror/core-utils",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-react-ssr",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-react-ssr/dist/remirror-extension-react-ssr.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/react",
+      "react",
+      "@remirror/core",
+      "@remirror/extension-react-component",
+      "@remirror/messages",
+      "@remirror/react-utils"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-react-tables",
+    "limit": "20 KB",
+    "path": "packages/remirror__extension-react-tables/dist/remirror-extension-react-tables.js",
+    "ignore": [
+      "@remirror/pm",
+      "react",
+      "react-dom",
+      "@remirror/core",
+      "@remirror/core-utils",
+      "@remirror/extension-positioner",
+      "@remirror/extension-tables",
+      "@remirror/icons",
+      "@remirror/messages",
+      "@remirror/react-components",
+      "@remirror/react-core",
+      "@remirror/react-hooks",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-shortcuts",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-shortcuts/dist/remirror-extension-shortcuts.js",
+    "ignore": ["@remirror/pm", "@remirror/core"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-strike",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-strike/dist/remirror-extension-strike.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-tables",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-tables/dist/remirror-extension-tables.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-events",
+      "@remirror/extension-positioner",
+      "@remirror/messages",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-text",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-text/dist/remirror-extension-text.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-text-case",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-text-case/dist/remirror-extension-text-case.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-text-color",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-text-color/dist/remirror-extension-text-color.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages", "@remirror/theme"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-text-highlight",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-text-highlight/dist/remirror-extension-text-highlight.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-text-color",
+      "@remirror/messages"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-trailing-node",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-trailing-node/dist/remirror-extension-trailing-node.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-underline",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-underline/dist/remirror-extension-underline.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-whitespace",
+    "limit": "10 KB",
+    "path": "packages/remirror__extension-whitespace/dist/remirror-extension-whitespace.js",
+    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-yjs",
+    "limit": "115 KB",
+    "path": "packages/remirror__extension-yjs/dist/remirror-extension-yjs.js",
+    "ignore": ["@remirror/pm", "yjs", "@remirror/core", "@remirror/messages"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/i18n",
+    "limit": "50 KB",
+    "path": "packages/remirror__i18n/dist/remirror-i18n.js",
+    "ignore": ["@remirror/core-helpers", "@remirror/core-types"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/icons",
+    "limit": "30 KB",
+    "path": "packages/remirror__icons/dist/remirror-icons.js",
+    "ignore": ["@remirror/core-helpers"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/messages",
+    "limit": "50 KB",
+    "path": "packages/remirror__messages/dist/remirror-messages.js",
+    "ignore": ["@remirror/core-helpers", "@remirror/core-types"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/preset-core",
+    "limit": "10 KB",
+    "path": "packages/remirror__preset-core/dist/remirror-preset-core.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-doc",
+      "@remirror/extension-events",
+      "@remirror/extension-gap-cursor",
+      "@remirror/extension-history",
+      "@remirror/extension-paragraph",
+      "@remirror/extension-positioner",
+      "@remirror/extension-text"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/preset-formatting",
+    "limit": "10 KB",
+    "path": "packages/remirror__preset-formatting/dist/remirror-preset-formatting.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-bold",
+      "@remirror/extension-columns",
+      "@remirror/extension-font-size",
+      "@remirror/extension-heading",
+      "@remirror/extension-italic",
+      "@remirror/extension-node-formatting",
+      "@remirror/extension-strike",
+      "@remirror/extension-sub",
+      "@remirror/extension-sup",
+      "@remirror/extension-text-case",
+      "@remirror/extension-text-color",
+      "@remirror/extension-text-highlight",
+      "@remirror/extension-underline",
+      "@remirror/extension-whitespace"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/preset-react",
+    "limit": "20 KB",
+    "path": "packages/remirror__preset-react/dist/remirror-preset-react.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/react",
+      "@types/react-dom",
+      "react",
+      "react-dom",
+      "@remirror/core",
+      "@remirror/extension-placeholder",
+      "@remirror/extension-react-component",
+      "@remirror/react-utils"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/preset-wysiwyg",
+    "limit": "130 KB",
+    "path": "packages/remirror__preset-wysiwyg/dist/remirror-preset-wysiwyg.js",
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-bidi",
+      "@remirror/extension-blockquote",
+      "@remirror/extension-bold",
+      "@remirror/extension-code",
+      "@remirror/extension-code-block",
+      "@remirror/extension-drop-cursor",
+      "@remirror/extension-embed",
+      "@remirror/extension-find",
+      "@remirror/extension-gap-cursor",
+      "@remirror/extension-hard-break",
+      "@remirror/extension-heading",
+      "@remirror/extension-horizontal-rule",
+      "@remirror/extension-image",
+      "@remirror/extension-italic",
+      "@remirror/extension-link",
+      "@remirror/extension-list",
+      "@remirror/extension-shortcuts",
+      "@remirror/extension-strike",
+      "@remirror/extension-trailing-node",
+      "@remirror/extension-underline",
+      "@remirror/preset-core"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/react-components",
+    "limit": "200 KB",
+    "path": "packages/remirror__react-components/dist/remirror-react-components.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/react",
+      "@types/react-dom",
+      "react",
+      "react-dom",
+      "@remirror/core",
+      "@remirror/extension-positioner",
+      "@remirror/icons",
+      "@remirror/messages",
+      "@remirror/react-core",
+      "@remirror/react-hooks",
+      "@remirror/react-utils",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/react-hooks",
+    "limit": "200 KB",
+    "path": "packages/remirror__react-hooks/dist/remirror-react-hooks.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/react",
+      "@types/react-dom",
+      "react",
+      "react-dom",
+      "@remirror/core",
+      "@remirror/core-constants",
+      "@remirror/core-helpers",
+      "@remirror/extension-emoji",
+      "@remirror/extension-events",
+      "@remirror/extension-history",
+      "@remirror/extension-mention",
+      "@remirror/extension-mention-atom",
+      "@remirror/extension-positioner",
+      "@remirror/react-core",
+      "@remirror/react-utils"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/react-renderer",
+    "limit": "50 KB",
+    "path": "packages/remirror__react-renderer/dist/remirror-react-renderer.js",
+    "ignore": ["@types/react", "react", "@remirror/core"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/react-ssr",
+    "limit": "10 KB",
+    "path": "packages/remirror__react-ssr/dist/remirror-react-ssr.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/react",
+      "@types/react-dom",
+      "react",
+      "react-dom",
+      "@remirror/core",
+      "@remirror/extension-react-ssr"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/react-ui",
+    "limit": "200 KB",
+    "path": "packages/remirror__react-ui/dist/remirror-react-ui.js",
+    "ignore": [
+      "@remirror/pm",
+      "@types/react",
+      "@types/react-dom",
+      "react",
+      "react-dom",
+      "@remirror/core",
+      "@remirror/extension-blockquote",
+      "@remirror/extension-bold",
+      "@remirror/extension-callout",
+      "@remirror/extension-code",
+      "@remirror/extension-code-block",
+      "@remirror/extension-columns",
+      "@remirror/extension-find",
+      "@remirror/extension-font-size",
+      "@remirror/extension-heading",
+      "@remirror/extension-history",
+      "@remirror/extension-horizontal-rule",
+      "@remirror/extension-italic",
+      "@remirror/extension-list",
+      "@remirror/extension-node-formatting",
+      "@remirror/extension-positioner",
+      "@remirror/extension-strike",
+      "@remirror/extension-sub",
+      "@remirror/extension-sup",
+      "@remirror/extension-tables",
+      "@remirror/extension-text-color",
+      "@remirror/extension-underline",
+      "@remirror/extension-whitespace",
+      "@remirror/icons",
+      "@remirror/messages",
+      "@remirror/react-components",
+      "@remirror/react-core",
+      "@remirror/react-hooks",
+      "@remirror/theme"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/react-utils",
+    "limit": "10 KB",
+    "path": "packages/remirror__react-utils/dist/remirror-react-utils.js",
+    "ignore": [
+      "@types/react",
+      "react",
+      "@remirror/core-constants",
+      "@remirror/core-helpers",
+      "@remirror/core-types"
+    ],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/theme",
+    "limit": "10 KB",
+    "path": "packages/remirror__theme/dist/remirror-theme.js",
+    "ignore": ["@remirror/core-types"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/types",
+    "limit": "1 KB",
+    "path": "packages/remirror__types/dist/remirror-types.js",
+    "ignore": [],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "test-keyboard",
+    "limit": "10 KB",
+    "path": "packages/test-keyboard/dist/test-keyboard.js",
+    "ignore": ["@remirror/core-helpers", "@remirror/core-types"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/extension-template",
+    "limit": "10 KB",
+    "path": "support/templates/extension-template/dist/remirror-extension-template.browser.esm.js",
+    "ignore": ["@remirror/pm", "@remirror/core"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/minimal-template",
+    "limit": "50 KB",
+    "path": "support/templates/minimal-template/dist/remirror-minimal-template.browser.esm.js",
+    "ignore": ["@remirror/core-helpers"],
+    "running": false,
+    "gzip": true
+  },
+  {
+    "name": "@remirror/preset-template",
+    "limit": "10 KB",
+    "path": "support/templates/preset-template/dist/remirror-preset-template.browser.esm.js",
+    "ignore": ["@remirror/pm", "@remirror/core"],
+    "running": false,
+    "gzip": true
+  }
+]

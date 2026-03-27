@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9380],{89598:(e,s,t)=>{t.r(s),t.d(s,{default:()=>c});var r=t(7378);const c=()=>((0,r.useEffect)((()=>{window.location.replace("https://github.com/orgs/remirror/projects")}),[]),null)}}]);

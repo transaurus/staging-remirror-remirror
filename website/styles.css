@@ -1,0 +1,89 @@
+:root {
+  --ifm-color-primary: #7963d2;
+  --ifm-color-primary-dark: #644bcb;
+  --ifm-color-primary-darker: #5a3fc8;
+  --ifm-color-primary-darkest: #4830a8;
+  --ifm-color-primary-light: #8e7bd9;
+  --ifm-color-primary-lighter: #9887dc;
+  --ifm-color-primary-lightest: #b7abe7;
+  --ifm-code-font-size: 100%;
+
+  --ifm-navbar-background-color: #7963d2;
+  --ifm-navbar-link-color: #fff;
+  --ifm-navbar-link-hover-color: #ccc;
+  --ifm-footer-background-color: #303846;
+  --ifm-menu-color-background-active: #e7e3f7;
+
+  --ifm-background-color: #fff;
+}
+
+html[data-theme='dark'] {
+  --ifm-navbar-background-color: #7963d2;
+  --ifm-background-color: #303846;
+  --ifm-footer-background-color: #424e62;
+  --ifm-heading-color: #fff;
+  --ifm-font-color-base: #fff;
+  --ifm-menu-color-background-active: #fff;
+}
+
+.navbar--fixed-top {
+  width: 100%;
+}
+
+.navbar__items {
+  color: #fff;
+}
+
+.navbar-sidebar {
+  --ifm-menu-color: #fff;
+}
+
+.footer__links {
+  text-align: center;
+}
+
+.beta {
+  align-items: center;
+  background-color: #ffe08a;
+  border-radius: 0.375em;
+  color: rgba(0, 0, 0, 0.7);
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.beta:after {
+  content: 'Beta';
+}
+
+.theme-doc-markdown.markdown section {
+  display: block;
+}
+
+.theme-doc-markdown.markdown section h2 {
+  position: sticky;
+  top: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 0;
+  z-index: calc(var(--ifm-z-index-dropdown)+4);
+  background-color: var(--ifm-background-color);
+  border-bottom: 2px solid var(--ifm-toc-border-color);
+}
+
+.theme-doc-markdown.markdown section h3 {
+  position: sticky;
+  top: 122px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+  z-index: calc(var(--ifm-z-index-dropdown)+3);
+  background-color: var(--ifm-background-color);
+  border-bottom: 2px solid var(--ifm-toc-border-color);
+}

@@ -1,0 +1,81 @@
+{
+  "name": "@remirror/extension-markdown",
+  "version": "3.0.3",
+  "description": "Generate markdown output from your editor",
+  "keywords": [
+    "remirror",
+    "extension"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-markdown",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__extension-markdown"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-extension-markdown.js",
+      "require": "./dist/remirror-extension-markdown.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-extension-markdown.cjs",
+  "module": "./dist/remirror-extension-markdown.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/messages": "workspace:*",
+    "@types/marked": "^4.3.1",
+    "@types/turndown": "^5.0.1",
+    "marked": "^4.3.0",
+    "turndown": "^7.1.2",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/extension-react-tables": "workspace:*",
+    "@remirror/pm": "workspace:*"
+  },
+  "peerDependencies": {
+    "@remirror/extension-react-tables": "workspace:*",
+    "@remirror/pm": "workspace:^"
+  },
+  "peerDependenciesMeta": {
+    "@remirror/extension-react-tables": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-extension-markdown.d.ts",
+        "import": "./dist/remirror-extension-markdown.js",
+        "require": "./dist/remirror-extension-markdown.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-extension-markdown.cjs",
+    "module": "./dist/remirror-extension-markdown.js",
+    "type": "module",
+    "types": "./dist/remirror-extension-markdown.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "25 KB"
+  }
+}

@@ -1,0 +1,147 @@
+import { CommandFunction } from '@remirror/core';
+import { CreateExtensionPlugin } from '@remirror/core';
+import { EditorState } from '@remirror/core';
+import { Helper } from '@remirror/core';
+import { InsertNodeOptions } from '@remirror/core';
+import { PlainExtension } from '@remirror/core';
+import { Static } from '@remirror/core';
+
+/**
+ * Converts the provide HTML to markdown.
+ */
+export declare function htmlToMarkdown(html: string): string;
+
+/**
+ * This extension adds support for markdown editors using remirror.
+ *
+ * TODO - when presets are removed automatically include all the supported
+ * extensions.
+ *
+ * This extension adds the following to the `ManagerStore`.
+ *
+ * - `getMarkdown()` - extract the markdown representation from the editor.
+ *
+ * Future features
+ *
+ * - [ ] Add markdown specific commands which add the markdown syntax to the
+ *   text content.
+ */
+declare class MarkdownExtension extends PlainExtension<MarkdownOptions> {
+    get name(): "markdown";
+    /**
+     * Add the `markdown` string handler and `getMarkdown` state helper method.
+     */
+    onCreate(): void;
+    createPlugin(): CreateExtensionPlugin;
+    /**
+     * Convert the markdown to a prosemirror node.
+     */
+    private markdownToProsemirrorNode;
+    /**
+     * Insert a markdown string as a ProseMirror Node.
+     *
+     * ```ts
+     * commands.insertMarkdown('# Heading\nAnd content');
+     * // => <h1 id="heading">Heading</h1><p>And content</p>
+     * ```
+     *
+     * The content will be inlined by default if not a block node.
+     *
+     * ```ts
+     * commands.insertMarkdown('**is bold.**')
+     * // => <strong>is bold.</strong>
+     * ```
+     *
+     * To always wrap the content in a block you can pass the following option.
+     *
+     * ```ts
+     * commands.insertMarkdown('**is bold.**', { alwaysWrapInBlock: true });
+     * // => <p><strong>is bold.</strong></p>
+     * ```
+     */
+    insertMarkdown(markdown: string, options?: InsertNodeOptions & {
+        alwaysWrapInBlock?: boolean;
+    }): CommandFunction;
+    /**
+     * Get the markdown content from the current document.
+     *
+     * @param state - the state provided to the `getMarkdown` method.
+     */
+    getMarkdown(state?: EditorState): Helper<string>;
+    /**
+     * TODO add commands for plain text markdown
+     * @notimplemented
+     *
+     * @internal
+     */
+    toggleBoldMarkdown(): CommandFunction;
+}
+export { MarkdownExtension }
+export { MarkdownExtension as MarkdownExtension_alias_1 }
+
+declare interface MarkdownOptions {
+    /**
+     * Converts the provided html to a markdown string.
+     *
+     * By default this uses
+     */
+    htmlToMarkdown?: Static<(html: string) => string>;
+    /**
+     * Takes a markdown string and outputs html. It is up to you to make sure the
+     * markdown is sanitized during this function call by providing the
+     * `sanitizeHtml` method.
+     */
+    markdownToHtml?: Static<(markdown: string, sanitizer?: (html: string) => string) => string>;
+    /**
+     * Provide a sanitizer to prevent XSS attacks. Remirror does not provide any
+     * sanitization by default.
+     */
+    htmlSanitizer?: Static<(html: string) => string>;
+    /**
+     * The parent nodes (or tags) where the markdown extension shortcuts are
+     * active.
+     *
+     * @defaultValue ['code']
+     *
+     * TODO implement keyboard shortcuts when within an activeNode for the
+     * markdown extension.
+     */
+    activeNodes?: string[];
+    /**
+     * Set this to `true` to copy the values from the text editor as markdown.
+     * This means that when pasting into a plain text editor (vscode) for example,
+     * the markdown will be preserved.
+     *
+     * @defaultValue false
+     */
+    copyAsMarkdown?: boolean;
+}
+export { MarkdownOptions }
+export { MarkdownOptions as MarkdownOptions_alias_1 }
+
+/**
+ * @module
+ *
+ * Provides the main method used to convert markdown to html.
+ */
+/**
+ * Converts the provided markdown to HTML.
+ */
+export declare function markdownToHtml(markdown: string, sanitizer?: (html: string) => string): string;
+
+export { }
+
+declare global {
+  namespace Remirror {
+    interface StringHandlers {
+      /**
+       * Register the markdown string handler..
+       */
+      markdown: MarkdownExtension;
+    }
+
+    interface AllExtensions {
+      markdown: MarkdownExtension;
+    }
+  }
+}

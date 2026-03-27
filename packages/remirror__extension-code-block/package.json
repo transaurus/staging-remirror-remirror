@@ -1,0 +1,107 @@
+{
+  "name": "@remirror/extension-code-block",
+  "version": "3.0.2",
+  "description": "Unleash the inner coder with code blocks for your remirror editor.",
+  "keywords": [
+    "remirror",
+    "remirror-extension",
+    "code",
+    "code block",
+    "refractor",
+    "prism",
+    "editor"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-code-block",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__extension-code-block"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-extension-code-block.js",
+      "require": "./dist/remirror-extension-code-block.cjs"
+    },
+    "./formatter": {
+      "types": "./dist-types/formatter.d.ts",
+      "import": "./formatter/dist/remirror-extension-code-block-formatter.js",
+      "require": "./formatter/dist/remirror-extension-code-block-formatter.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-extension-code-block.cjs",
+  "module": "./dist/remirror-extension-code-block.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types",
+    "formatter"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/extension-positioner": "workspace:*",
+    "@remirror/messages": "workspace:*",
+    "@remirror/theme": "workspace:*",
+    "@types/refractor": "^3.0.2",
+    "refractor": "^3.6.0"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*",
+    "@types/jsdom": "^16.2.15",
+    "jsdom": "^17.0.0",
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^",
+    "prettier": "^3.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/refractor": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-extension-code-block.d.ts",
+        "import": "./dist/remirror-extension-code-block.js",
+        "require": "./dist/remirror-extension-code-block.cjs"
+      },
+      "./formatter": {
+        "types": "./formatter/dist/remirror-extension-code-block-formatter.d.ts",
+        "import": "./formatter/dist/remirror-extension-code-block-formatter.js",
+        "require": "./formatter/dist/remirror-extension-code-block-formatter.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-extension-code-block.cjs",
+    "module": "./dist/remirror-extension-code-block.js",
+    "type": "module",
+    "types": "./dist/remirror-extension-code-block.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "25 KB"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "formatter.ts",
+      "index.ts"
+    ]
+  }
+}

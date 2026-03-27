@@ -1,0 +1,85 @@
+{
+  "name": "@remirror/extension-react-ssr",
+  "version": "3.0.3",
+  "description": "If server side support is important to you, then this is perfect for your remirror editor in react.",
+  "keywords": [
+    "remirror",
+    "prosemirror",
+    "extension",
+    "server side",
+    "react",
+    "text-editor"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-react-ssr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__extension-react-ssr"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-extension-react-ssr.js",
+      "require": "./dist/remirror-extension-react-ssr.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-extension-react-ssr.cjs",
+  "module": "./dist/remirror-extension-react-ssr.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/extension-react-component": "workspace:*",
+    "@remirror/messages": "workspace:*",
+    "@remirror/react-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*",
+    "@remirror/react": "workspace:*",
+    "@types/react": "^18.2.0",
+    "react": "^18.3.1"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^",
+    "@types/react": "^16.14.0 || ^17 || ^18",
+    "react": "^16.14.0 || ^17 || ^18"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-extension-react-ssr.d.ts",
+        "import": "./dist/remirror-extension-react-ssr.js",
+        "require": "./dist/remirror-extension-react-ssr.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-extension-react-ssr.cjs",
+    "module": "./dist/remirror-extension-react-ssr.js",
+    "type": "module",
+    "types": "./dist/remirror-extension-react-ssr.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "10 KB"
+  }
+}

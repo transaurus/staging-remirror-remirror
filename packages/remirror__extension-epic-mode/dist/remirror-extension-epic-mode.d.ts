@@ -1,0 +1,12 @@
+export { COLORS_alias_1 as COLORS } from './_tsup-dts-rollup';
+export { defaultEffect_alias_1 as defaultEffect } from './_tsup-dts-rollup';
+export { heartEffect_alias_1 as heartEffect } from './_tsup-dts-rollup';
+export { spawningEffect_alias_1 as spawningEffect } from './_tsup-dts-rollup';
+export { EpicModeExtension_alias_1 as EpicModeExtension } from './_tsup-dts-rollup';
+export { CreateParticleProps_alias_1 as CreateParticleProps } from './_tsup-dts-rollup';
+export { EpicModeOptions_alias_1 as EpicModeOptions } from './_tsup-dts-rollup';
+export { EpicModePluginStateProps_alias_1 as EpicModePluginStateProps } from './_tsup-dts-rollup';
+export { Particle_alias_1 as Particle } from './_tsup-dts-rollup';
+export { ParticleEffect_alias_1 as ParticleEffect } from './_tsup-dts-rollup';
+export { ParticleRange_alias_1 as ParticleRange } from './_tsup-dts-rollup';
+export { UpdateParticleProps_alias_1 as UpdateParticleProps } from './_tsup-dts-rollup';

@@ -1,0 +1,72 @@
+{
+  "name": "@remirror/extension-entity-reference",
+  "version": "3.0.2",
+  "description": "Allow users to highlight important content",
+  "keywords": [
+    "remirror",
+    "extension"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-entity-reference",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__extension-entity-reference"
+  },
+  "license": "MIT",
+  "contributors": [
+    "NEXT <open-source@nextapp.co>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-extension-entity-reference.js",
+      "require": "./dist/remirror-extension-entity-reference.cjs"
+    },
+    "./package.json": "./package.json",
+    "./types/*": "./dist/declarations/src/*.d.ts"
+  },
+  "main": "./dist/remirror-extension-entity-reference.cjs",
+  "module": "./dist/remirror-extension-entity-reference.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/extension-events": "workspace:*",
+    "@remirror/extension-positioner": "workspace:*"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-extension-entity-reference.d.ts",
+        "import": "./dist/remirror-extension-entity-reference.js",
+        "require": "./dist/remirror-extension-entity-reference.cjs"
+      },
+      "./package.json": "./package.json",
+      "./types/*": "./dist/declarations/src/*.d.ts"
+    },
+    "main": "./dist/remirror-extension-entity-reference.cjs",
+    "module": "./dist/remirror-extension-entity-reference.js",
+    "type": "module",
+    "types": "./dist/remirror-extension-entity-reference.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "10 KB"
+  }
+}

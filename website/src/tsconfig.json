@@ -1,0 +1,48 @@
+{
+  "__AUTO_GENERATED__": [
+    "To update the configuration edit the following field.",
+    "`package.json > @remirror > tsconfigs > 'src'`",
+    "",
+    "Then run: `pnpm -w generate:ts`"
+  ],
+  "extends": "../../support/tsconfig.base.json",
+  "compilerOptions": {
+    "types": [],
+    "declaration": true,
+    "composite": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outDir": "../dist-types",
+    "noUncheckedIndexedAccess": false,
+    "baseUrl": "./",
+    "paths": {
+      "@components": ["components"],
+      "@components/*": ["components/*"]
+    },
+    "allowJs": true
+  },
+  "include": ["./"],
+  "references": [
+    {
+      "path": "../../packages/remirror__core/src"
+    },
+    {
+      "path": "../../packages/remirror__dev/src"
+    },
+    {
+      "path": "../../packages/remirror__react/src"
+    },
+    {
+      "path": "../../packages/remirror__react-editors/src"
+    },
+    {
+      "path": "../../packages/remirror__styles/src"
+    },
+    {
+      "path": "../../packages/create-context-state/src"
+    },
+    {
+      "path": "../../packages/remirror/src"
+    }
+  ]
+}

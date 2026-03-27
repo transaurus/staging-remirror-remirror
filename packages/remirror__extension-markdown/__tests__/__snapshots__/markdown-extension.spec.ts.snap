@@ -1,0 +1,432 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`commands.insertMarkdown can insert basic tables from markdown 1`] = `
+<div
+  aria-label=""
+  aria-multiline="true"
+  class="ProseMirror remirror-editor"
+  contenteditable="true"
+  role="textbox"
+  translate="no"
+>
+  <div
+    class="tableWrapper"
+  >
+    <table
+      style="--default-cell-min-width: 100px; min-width: 200px;"
+    >
+      <colgroup>
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>
+            <p>
+              Column 1
+            </p>
+          </th>
+          <th>
+            <p>
+              Column 2
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Row 1, Column 1
+            </p>
+          </td>
+          <td>
+            <p>
+              Row 1, Column 2
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Row 2, Column 1
+            </p>
+          </td>
+          <td>
+            <p>
+              Row 2, Column 2
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`commands.insertMarkdown can insert lists 1`] = `
+<div
+  aria-label=""
+  aria-multiline="true"
+  class="ProseMirror remirror-editor"
+  contenteditable="true"
+  role="textbox"
+  translate="no"
+>
+  <p>
+    Bullet list
+  </p>
+  <ul>
+    <li>
+      <p>
+        Item 1
+      </p>
+    </li>
+    <li>
+      <p>
+        Item 2
+      </p>
+    </li>
+  </ul>
+  <p>
+    Ordered list
+  </p>
+  <ol>
+    <li>
+      <p>
+        Item 1
+      </p>
+    </li>
+    <li>
+      <p>
+        Item 2
+      </p>
+    </li>
+  </ol>
+  <p>
+    Task list
+  </p>
+  <ul
+    data-task-list=""
+  >
+    <li
+      class="remirror-list-item-with-custom-mark"
+      data-checked=""
+      data-task-list-item=""
+    >
+      <label
+        class="remirror-list-item-marker-container"
+      >
+        <input
+          class="remirror-list-item-checkbox"
+          type="checkbox"
+        />
+      </label>
+      <div>
+        <p>
+          Item 1
+        </p>
+      </div>
+    </li>
+    <li
+      class="remirror-list-item-with-custom-mark"
+      data-task-list-item=""
+    >
+      <label
+        class="remirror-list-item-marker-container"
+      >
+        <input
+          class="remirror-list-item-checkbox"
+          type="checkbox"
+        />
+      </label>
+      <div>
+        <p>
+          Item 2
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`commands.insertMarkdown can insert marks 1`] = `
+<div
+  aria-label=""
+  aria-multiline="true"
+  class="ProseMirror remirror-editor"
+  contenteditable="true"
+  role="textbox"
+  translate="no"
+>
+  <p>
+    Content 
+    <strong>
+      is bold.
+    </strong>
+  </p>
+</div>
+`;
+
+exports[`commands.insertMarkdown can insert marks as blocks 1`] = `
+<div
+  aria-label=""
+  aria-multiline="true"
+  class="ProseMirror remirror-editor"
+  contenteditable="true"
+  role="textbox"
+  translate="no"
+>
+  <p>
+    Content 
+  </p>
+  <p>
+    <strong>
+      is bold.
+    </strong>
+  </p>
+</div>
+`;
+
+exports[`commands.insertMarkdown can insert react tables from markdown 1`] = `
+<div
+  aria-label=""
+  aria-multiline="true"
+  class="ProseMirror remirror-editor"
+  contenteditable="true"
+  role="textbox"
+  translate="no"
+>
+  <div
+    class="remirror-table-show-controllers"
+  >
+    <table
+      class="remirror-table remirror-table-with-controllers"
+      data-controllers-injected=""
+      style="min-width: 30px;"
+    >
+      <colgroup
+        class="remirror-table-colgroup"
+      >
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <tbody
+        class="remirror-table-tbody-with-controllers"
+      >
+        <tr>
+          <th
+            class="remirror-table-controller remirror-controllers-toggle"
+            contenteditable="false"
+            data-controller-cell=""
+          >
+            <div
+              class="remirror-table-controller-wrapper"
+              contenteditable="false"
+            >
+              <div
+                contenteditable="false"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-mark-row-corner"
+              />
+              <div
+                class="remirror-table-controller-mark-column-corner"
+              />
+            </div>
+          </th>
+          <th
+            class="remirror-table-controller remirror-controllers-toggle"
+            contenteditable="false"
+            data-controller-cell=""
+          >
+            <div
+              class="remirror-table-controller-wrapper"
+              contenteditable="false"
+            >
+              <div
+                contenteditable="false"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-mark-row-corner"
+              />
+              <div
+                class="remirror-table-controller-mark-column-corner"
+              />
+            </div>
+          </th>
+          <th
+            class="remirror-table-controller remirror-controllers-toggle"
+            contenteditable="false"
+            data-controller-cell=""
+          >
+            <div
+              class="remirror-table-controller-wrapper"
+              contenteditable="false"
+            >
+              <div
+                contenteditable="false"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-mark-row-corner"
+              />
+              <div
+                class="remirror-table-controller-mark-column-corner"
+              />
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th
+            class="remirror-table-controller remirror-controllers-toggle"
+            contenteditable="false"
+            data-controller-cell=""
+          >
+            <div
+              class="remirror-table-controller-wrapper"
+              contenteditable="false"
+            >
+              <div
+                contenteditable="false"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-mark-row-corner"
+              />
+              <div
+                class="remirror-table-controller-mark-column-corner"
+              />
+            </div>
+          </th>
+          <th>
+            <p>
+              Column 1
+            </p>
+          </th>
+          <th>
+            <p>
+              Column 2
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <th
+            class="remirror-table-controller remirror-controllers-toggle"
+            contenteditable="false"
+            data-controller-cell=""
+          >
+            <div
+              class="remirror-table-controller-wrapper"
+              contenteditable="false"
+            >
+              <div
+                contenteditable="false"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-mark-row-corner"
+              />
+              <div
+                class="remirror-table-controller-mark-column-corner"
+              />
+            </div>
+          </th>
+          <td>
+            <p>
+              Row 1, Column 1
+            </p>
+          </td>
+          <td>
+            <p>
+              Row 1, Column 2
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th
+            class="remirror-table-controller remirror-controllers-toggle"
+            contenteditable="false"
+            data-controller-cell=""
+          >
+            <div
+              class="remirror-table-controller-wrapper"
+              contenteditable="false"
+            >
+              <div
+                contenteditable="false"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-trigger-area"
+              />
+              <div
+                class="remirror-table-controller-mark-row-corner"
+              />
+              <div
+                class="remirror-table-controller-mark-column-corner"
+              />
+            </div>
+          </th>
+          <td>
+            <p>
+              Row 2, Column 1
+            </p>
+          </td>
+          <td>
+            <p>
+              Row 2, Column 2
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`commands.insertMarkdown does not replace marks 1`] = `
+<div
+  aria-label=""
+  aria-multiline="true"
+  class="ProseMirror remirror-editor"
+  contenteditable="true"
+  role="textbox"
+  translate="no"
+>
+  <p>
+    <strong>
+      is bold.
+    </strong>
+  </p>
+</div>
+`;

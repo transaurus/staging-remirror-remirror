@@ -1,0 +1,139 @@
+{
+  "name": "@remirror/react-editors",
+  "version": "2.0.3",
+  "description": "A showcase of possible react editors built with remirror.",
+  "keywords": [
+    "remirror",
+    "text-editors",
+    "wysiwyg",
+    "markdown",
+    "social",
+    "mention",
+    "react",
+    "prosemirror"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__react-editors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__react-editors"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-react-editors.js",
+      "require": "./dist/remirror-react-editors.cjs"
+    },
+    "./markdown": {
+      "types": "./dist-types/markdown/index.d.ts",
+      "import": "./markdown/dist/remirror-react-editors-markdown.js",
+      "require": "./markdown/dist/remirror-react-editors-markdown.cjs"
+    },
+    "./package.json": "./package.json",
+    "./social": {
+      "types": "./dist-types/social/index.d.ts",
+      "import": "./social/dist/remirror-react-editors-social.js",
+      "require": "./social/dist/remirror-react-editors-social.cjs"
+    },
+    "./wysiwyg": {
+      "types": "./dist-types/wysiwyg/index.d.ts",
+      "import": "./wysiwyg/dist/remirror-react-editors-wysiwyg.js",
+      "require": "./wysiwyg/dist/remirror-react-editors-wysiwyg.cjs"
+    }
+  },
+  "main": "./dist/remirror-react-editors.cjs",
+  "module": "./dist/remirror-react-editors.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types",
+    "markdown",
+    "social",
+    "wysiwyg"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core-helpers": "workspace:*",
+    "@remirror/extension-react-tables": "workspace:*",
+    "@remirror/i18n": "workspace:*",
+    "@remirror/pm": "workspace:*",
+    "@remirror/react": "workspace:*",
+    "@remirror/react-ui": "workspace:*",
+    "@remirror/styles": "workspace:*",
+    "@svgmoji/noto": "^3.2.0",
+    "@types/refractor": "^3.0.2",
+    "create-context-state": "workspace:^",
+    "refractor": "^3.6.0",
+    "remirror": "workspace:*",
+    "svgmoji": "^3.2.0"
+  },
+  "devDependencies": {
+    "@emotion/css": "^11.11.0",
+    "@remirror/cli": "workspace:*",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "@types/react": "^16.14.0 || ^17 || ^18",
+    "@types/react-dom": "^16.9.0 || ^17 || ^18",
+    "react": "^16.14.0 || ^17 || ^18",
+    "react-dom": "^16.14.0 || ^17 || ^18"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-react-editors.d.ts",
+        "import": "./dist/remirror-react-editors.js",
+        "require": "./dist/remirror-react-editors.cjs"
+      },
+      "./markdown": {
+        "types": "./markdown/dist/remirror-react-editors-markdown.d.ts",
+        "import": "./markdown/dist/remirror-react-editors-markdown.js",
+        "require": "./markdown/dist/remirror-react-editors-markdown.cjs"
+      },
+      "./package.json": "./package.json",
+      "./social": {
+        "types": "./social/dist/remirror-react-editors-social.d.ts",
+        "import": "./social/dist/remirror-react-editors-social.js",
+        "require": "./social/dist/remirror-react-editors-social.cjs"
+      },
+      "./wysiwyg": {
+        "types": "./wysiwyg/dist/remirror-react-editors-wysiwyg.d.ts",
+        "import": "./wysiwyg/dist/remirror-react-editors-wysiwyg.js",
+        "require": "./wysiwyg/dist/remirror-react-editors-wysiwyg.cjs"
+      }
+    },
+    "main": "./dist/remirror-react-editors.cjs",
+    "module": "./dist/remirror-react-editors.js",
+    "type": "module",
+    "types": "./dist/remirror-react-editors.d.ts"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts",
+      "markdown/index.ts",
+      "social/index.ts",
+      "wysiwyg/index.ts"
+    ]
+  }
+}

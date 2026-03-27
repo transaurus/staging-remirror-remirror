@@ -1,0 +1,90 @@
+{
+  "name": "@remirror/preset-wysiwyg",
+  "version": "3.0.2",
+  "description": "The preset for your wysiwyg editor.",
+  "keywords": [
+    "remirror",
+    "preset",
+    "text-editor"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__preset-wysiwyg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__preset-wysiwyg"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-preset-wysiwyg.js",
+      "require": "./dist/remirror-preset-wysiwyg.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-preset-wysiwyg.cjs",
+  "module": "./dist/remirror-preset-wysiwyg.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/extension-bidi": "workspace:*",
+    "@remirror/extension-blockquote": "workspace:*",
+    "@remirror/extension-bold": "workspace:*",
+    "@remirror/extension-code": "workspace:*",
+    "@remirror/extension-code-block": "workspace:*",
+    "@remirror/extension-drop-cursor": "workspace:*",
+    "@remirror/extension-embed": "workspace:*",
+    "@remirror/extension-find": "workspace:*",
+    "@remirror/extension-gap-cursor": "workspace:*",
+    "@remirror/extension-hard-break": "workspace:*",
+    "@remirror/extension-heading": "workspace:*",
+    "@remirror/extension-horizontal-rule": "workspace:*",
+    "@remirror/extension-image": "workspace:*",
+    "@remirror/extension-italic": "workspace:*",
+    "@remirror/extension-link": "workspace:*",
+    "@remirror/extension-list": "workspace:*",
+    "@remirror/extension-shortcuts": "workspace:*",
+    "@remirror/extension-strike": "workspace:*",
+    "@remirror/extension-trailing-node": "workspace:*",
+    "@remirror/extension-underline": "workspace:*",
+    "@remirror/preset-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-preset-wysiwyg.d.ts",
+        "import": "./dist/remirror-preset-wysiwyg.js",
+        "require": "./dist/remirror-preset-wysiwyg.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-preset-wysiwyg.cjs",
+    "module": "./dist/remirror-preset-wysiwyg.js",
+    "type": "module",
+    "types": "./dist/remirror-preset-wysiwyg.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "130 KB"
+  }
+}

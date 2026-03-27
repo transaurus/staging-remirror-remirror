@@ -1,0 +1,69 @@
+{
+  "name": "@remirror/extension-font-family",
+  "version": "3.0.2",
+  "description": "Add a font family to selected text, or text within the provided range.",
+  "keywords": [
+    "remirror",
+    "extension"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-font-family",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__extension-font-family"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-extension-font-family.js",
+      "require": "./dist/remirror-extension-font-family.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-extension-font-family.cjs",
+  "module": "./dist/remirror-extension-font-family.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/messages": "workspace:*"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-extension-font-family.d.ts",
+        "import": "./dist/remirror-extension-font-family.js",
+        "require": "./dist/remirror-extension-font-family.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-extension-font-family.cjs",
+    "module": "./dist/remirror-extension-font-family.js",
+    "type": "module",
+    "types": "./dist/remirror-extension-font-family.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "10 KB"
+  }
+}

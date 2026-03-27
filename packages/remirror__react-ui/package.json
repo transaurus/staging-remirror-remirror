@@ -1,0 +1,118 @@
+{
+  "name": "@remirror/react-ui",
+  "version": "1.0.3",
+  "description": "A selection of optional react components for your remirror editor, powered by @mui/material",
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__react-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__react-ui"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Will Hawker <w.hawker@hotmail.co.uk>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-react-ui.js",
+      "require": "./dist/remirror-react-ui.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-react-ui.cjs",
+  "module": "./dist/remirror-react-ui.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types",
+    "style"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.2",
+    "@mui/system": "^5.13.2",
+    "@remirror/core": "workspace:*",
+    "@remirror/extension-blockquote": "workspace:*",
+    "@remirror/extension-bold": "workspace:*",
+    "@remirror/extension-callout": "workspace:*",
+    "@remirror/extension-code": "workspace:*",
+    "@remirror/extension-code-block": "workspace:*",
+    "@remirror/extension-columns": "workspace:*",
+    "@remirror/extension-find": "workspace:*",
+    "@remirror/extension-font-size": "workspace:*",
+    "@remirror/extension-heading": "workspace:*",
+    "@remirror/extension-history": "workspace:*",
+    "@remirror/extension-horizontal-rule": "workspace:*",
+    "@remirror/extension-italic": "workspace:*",
+    "@remirror/extension-list": "workspace:*",
+    "@remirror/extension-node-formatting": "workspace:*",
+    "@remirror/extension-positioner": "workspace:*",
+    "@remirror/extension-strike": "workspace:*",
+    "@remirror/extension-sub": "workspace:*",
+    "@remirror/extension-sup": "workspace:*",
+    "@remirror/extension-tables": "workspace:*",
+    "@remirror/extension-text-color": "workspace:*",
+    "@remirror/extension-underline": "workspace:*",
+    "@remirror/extension-whitespace": "workspace:*",
+    "@remirror/icons": "workspace:*",
+    "@remirror/messages": "workspace:*",
+    "@remirror/react-components": "workspace:*",
+    "@remirror/react-core": "workspace:*",
+    "@remirror/react-hooks": "workspace:*",
+    "@remirror/theme": "workspace:*"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^",
+    "@types/react": "^16.14.0 || ^17 || ^18",
+    "@types/react-dom": "^16.9.0 || ^17 || ^18",
+    "react": "^16.14.0 || ^17 || ^18",
+    "react-dom": "^16.14.0 || ^17 || ^18"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-react-ui.d.ts",
+        "import": "./dist/remirror-react-ui.js",
+        "require": "./dist/remirror-react-ui.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-react-ui.cjs",
+    "module": "./dist/remirror-react-ui.js",
+    "type": "module",
+    "types": "./dist/remirror-react-ui.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "200 KB"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts"
+    ]
+  }
+}

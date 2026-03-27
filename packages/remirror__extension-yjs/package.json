@@ -1,0 +1,81 @@
+{
+  "name": "@remirror/extension-yjs",
+  "version": "4.0.3",
+  "description": "Realtime collaboration with yjs",
+  "keywords": [
+    "remirror",
+    "extension",
+    "yjs",
+    "realtime",
+    "collaboration"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-yjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__extension-yjs"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Benjie Gillam <code@benjiegillam.com>",
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-extension-yjs.js",
+      "require": "./dist/remirror-extension-yjs.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-extension-yjs.cjs",
+  "module": "./dist/remirror-extension-yjs.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/messages": "workspace:*",
+    "prosemirror-model": "^1.25.1",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-view": "^1.39.2",
+    "y-prosemirror": "^1.3.7",
+    "y-protocols": "^1.0.5"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*",
+    "y-webrtc": "^10.2.5",
+    "yjs": "^13.6.1"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^",
+    "yjs": "^13.6.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-extension-yjs.d.ts",
+        "import": "./dist/remirror-extension-yjs.js",
+        "require": "./dist/remirror-extension-yjs.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-extension-yjs.cjs",
+    "module": "./dist/remirror-extension-yjs.js",
+    "type": "module",
+    "types": "./dist/remirror-extension-yjs.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "115 KB"
+  }
+}

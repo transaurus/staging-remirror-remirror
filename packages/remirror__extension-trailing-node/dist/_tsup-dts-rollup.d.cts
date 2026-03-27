@@ -1,0 +1,50 @@
+import { OnSetOptionsProps } from '@remirror/core';
+import { PlainExtension } from '@remirror/core';
+import { ProsemirrorPlugin } from '@remirror/core';
+import { TrailingNodePluginOptions } from '@remirror/pm/trailing-node';
+
+/**
+ * Ensure that there's always a trailing paragraph at the end of the document.
+ *
+ * Why? In some scenarios it is difficult to place a cursor after the last element.
+ * This ensures there's always space to select the position afterward.
+ *
+ */
+declare class TrailingNodeExtension extends PlainExtension<TrailingNodeOptions> {
+    get name(): "trailingNode";
+    /**
+     * Whenever the options are changed make sure to update the plugin with the
+     * new values and trigger a state update.
+     */
+    protected onSetOptions(props: OnSetOptionsProps<TrailingNodeOptions>): void;
+    /**
+     * Add the trailing node plugin to the editor.
+     */
+    createExternalPlugins(): ProsemirrorPlugin[];
+}
+export { TrailingNodeExtension }
+export { TrailingNodeExtension as TrailingNodeExtension_alias_1 }
+
+declare interface TrailingNodeOptions extends TrailingNodePluginOptions {
+    /**
+     * By default this extension will set trailing nodes for all nodes except for
+     * the ones that have the tag `Tags.LastNodeCompatible`. Setting this to true
+     * means that the only nodes that will be ignored are those passed to the
+     * `ignoredNodes` array.
+     *
+     * @defaultValue false
+     */
+    disableTags?: boolean;
+}
+export { TrailingNodeOptions }
+export { TrailingNodeOptions as TrailingNodeOptions_alias_1 }
+
+export { }
+
+declare global {
+  namespace Remirror {
+    interface AllExtensions {
+      trailingNode: TrailingNodeExtension;
+    }
+  }
+}

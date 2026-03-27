@@ -1,0 +1,115 @@
+{
+  "name": "@remirror/styles",
+  "version": "3.0.0",
+  "description": "Styles for every remirror package.",
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__styles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__styles"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./*": "./*",
+    "./dom": {
+      "types": "./dist-types/dom.d.ts",
+      "import": "./dom/dist/remirror-styles-dom.js",
+      "require": "./dom/dist/remirror-styles-dom.cjs"
+    },
+    "./emotion": {
+      "types": "./dist-types/emotion.d.ts",
+      "import": "./emotion/dist/remirror-styles-emotion.js",
+      "require": "./emotion/dist/remirror-styles-emotion.cjs"
+    },
+    "./package.json": "./package.json",
+    "./styled-components": {
+      "types": "./dist-types/styled-components.d.ts",
+      "import": "./styled-components/dist/remirror-styles-styled-components.js",
+      "require": "./styled-components/dist/remirror-styles-styled-components.cjs"
+    }
+  },
+  "files": [
+    "*.css",
+    "dist",
+    "dist-types",
+    "dom",
+    "emotion",
+    "styled-components"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core-helpers": "workspace:*"
+  },
+  "devDependencies": {
+    "@emotion/css": "^11.11.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@remirror/cli": "workspace:*",
+    "@types/react": "^18.2.0",
+    "react": "^18.3.1",
+    "styled-components": "^6.1.12"
+  },
+  "peerDependencies": {
+    "@emotion/css": "^11.11.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@types/react": ">= 16.14.40",
+    "react": ">= 16.14.0",
+    "styled-components": "^6.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@emotion/css": {
+      "optional": true
+    },
+    "@emotion/react": {
+      "optional": true
+    },
+    "@emotion/styled": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "styled-components": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      "./*": "./*",
+      "./dom": {
+        "types": "./dom/dist/remirror-styles-dom.d.ts",
+        "import": "./dom/dist/remirror-styles-dom.js",
+        "require": "./dom/dist/remirror-styles-dom.cjs"
+      },
+      "./emotion": {
+        "types": "./emotion/dist/remirror-styles-emotion.d.ts",
+        "import": "./emotion/dist/remirror-styles-emotion.js",
+        "require": "./emotion/dist/remirror-styles-emotion.cjs"
+      },
+      "./package.json": "./package.json",
+      "./styled-components": {
+        "types": "./styled-components/dist/remirror-styles-styled-components.d.ts",
+        "import": "./styled-components/dist/remirror-styles-styled-components.js",
+        "require": "./styled-components/dist/remirror-styles-styled-components.cjs"
+      }
+    },
+    "type": "module"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "emotion.tsx",
+      "styled-components.tsx",
+      "dom.tsx"
+    ]
+  }
+}

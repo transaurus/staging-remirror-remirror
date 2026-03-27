@@ -1,0 +1,67 @@
+{
+  "name": "@remirror/extension-mention",
+  "version": "3.0.2",
+  "description": "Mention extension for the remirror wysiwyg editor",
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-mention",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__extension-mention"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-extension-mention.js",
+      "require": "./dist/remirror-extension-mention.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-extension-mention.cjs",
+  "module": "./dist/remirror-extension-mention.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/extension-events": "workspace:*",
+    "@remirror/messages": "workspace:*",
+    "escape-string-regexp": "^4.0.0"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-extension-mention.d.ts",
+        "import": "./dist/remirror-extension-mention.js",
+        "require": "./dist/remirror-extension-mention.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-extension-mention.cjs",
+    "module": "./dist/remirror-extension-mention.js",
+    "type": "module",
+    "types": "./dist/remirror-extension-mention.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "10 KB"
+  }
+}

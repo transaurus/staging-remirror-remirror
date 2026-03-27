@@ -1,0 +1,70 @@
+{
+  "name": "@remirror/extension-callout",
+  "version": "3.0.2",
+  "description": "Add callouts to your text editor.",
+  "keywords": [
+    "remirror",
+    "extension"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-callout",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__extension-callout"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Will Hawker <w.hawker@hotmail.co.uk>"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-extension-callout.js",
+      "require": "./dist/remirror-extension-callout.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/remirror-extension-callout.cjs",
+  "module": "./dist/remirror-extension-callout.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@remirror/core": "workspace:*",
+    "@remirror/messages": "workspace:*",
+    "@remirror/theme": "workspace:*"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*",
+    "@remirror/pm": "workspace:*"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-extension-callout.d.ts",
+        "import": "./dist/remirror-extension-callout.js",
+        "require": "./dist/remirror-extension-callout.cjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/remirror-extension-callout.cjs",
+    "module": "./dist/remirror-extension-callout.js",
+    "type": "module",
+    "types": "./dist/remirror-extension-callout.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "15 KB"
+  }
+}

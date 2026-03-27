@@ -1,0 +1,97 @@
+{
+  "name": "@remirror/i18n",
+  "version": "3.0.0",
+  "description": "Supported internationalization and locales for the remirror editor.",
+  "keywords": [
+    "remirror",
+    "extension"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__i18n",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remirror/remirror.git",
+    "directory": "packages/remirror__i18n"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Ifiok Jr. <ifiokotung@gmail.com>"
+  ],
+  "sideEffects": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist-types/index.d.ts",
+      "import": "./dist/remirror-i18n.js",
+      "require": "./dist/remirror-i18n.cjs"
+    },
+    "./en": {
+      "types": "./dist-types/en/index.d.ts",
+      "import": "./en/dist/remirror-i18n-en.js",
+      "require": "./en/dist/remirror-i18n-en.cjs"
+    },
+    "./package.json": "./package.json",
+    "./plurals": {
+      "types": "./dist-types/plurals.d.ts",
+      "import": "./plurals/dist/remirror-i18n-plurals.js",
+      "require": "./plurals/dist/remirror-i18n-plurals.cjs"
+    }
+  },
+  "main": "./dist/remirror-i18n.cjs",
+  "module": "./dist/remirror-i18n.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist",
+    "dist-types",
+    "en",
+    "plurals"
+  ],
+  "scripts": {
+    "build": "remirror-cli build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.0",
+    "@lingui/core": "^4.2.0",
+    "@lingui/detect-locale": "^4.2.0",
+    "@remirror/core-helpers": "workspace:*",
+    "@remirror/core-types": "workspace:*",
+    "make-plural": "^6.2.2"
+  },
+  "devDependencies": {
+    "@remirror/cli": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/remirror-i18n.d.ts",
+        "import": "./dist/remirror-i18n.js",
+        "require": "./dist/remirror-i18n.cjs"
+      },
+      "./en": {
+        "types": "./en/dist/remirror-i18n-en.d.ts",
+        "import": "./en/dist/remirror-i18n-en.js",
+        "require": "./en/dist/remirror-i18n-en.cjs"
+      },
+      "./package.json": "./package.json",
+      "./plurals": {
+        "types": "./plurals/dist/remirror-i18n-plurals.d.ts",
+        "import": "./plurals/dist/remirror-i18n-plurals.js",
+        "require": "./plurals/dist/remirror-i18n-plurals.cjs"
+      }
+    },
+    "main": "./dist/remirror-i18n.cjs",
+    "module": "./dist/remirror-i18n.js",
+    "type": "module",
+    "types": "./dist/remirror-i18n.d.ts"
+  },
+  "@remirror": {
+    "sizeLimit": "50 KB"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts",
+      "plurals.ts",
+      "en/index.ts"
+    ]
+  }
+}

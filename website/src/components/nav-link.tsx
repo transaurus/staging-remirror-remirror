@@ -1,0 +1,26 @@
+import Link from '@docusaurus/Link';
+import isAbsoluteURL from 'is-absolute-url';
+import React, { FC, PropsWithChildren } from 'react';
+
+import styles from './components.module.css';
+import { ExternalIcon } from './external-icon';
+
+interface NavLinkProps {
+  href?: string;
+  to?: string;
+}
+
+export const NavLink: FC<PropsWithChildren<NavLinkProps>> = ({ href, children, ...props }) => {
+  const isExternal = isAbsoluteURL(href ?? '');
+
+  if (isExternal) {
+    return (
+      <Link {...props} href={href} className={styles.link}>
+        {children} <ExternalIcon />
+      </Link>
+    );
+  }
+
+  const to = (props.to ?? href) as string;
+  return <Link {...props} to={to} className={styles.link} />;
+};

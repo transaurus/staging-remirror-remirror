@@ -1,0 +1,9 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
+  "ignore": ["storybook-react", "support", "testing", "website", "actions", "scripts"],
+  "updateInternalDependencies": "patch",
+  "commit": false,
+  "linked": [],
+  "access": "public",
+  "baseBranch": "main"
+}
