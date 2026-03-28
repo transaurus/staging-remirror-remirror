@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Getting started": {
+    "message": "Getting started",
+    "description": "The label for category Getting started in sidebar docs"
+  },
+  "sidebar.docs.category.Showcase": {
+    "message": "Showcase",
+    "description": "The label for category Showcase in sidebar docs"
+  },
+  "sidebar.docs.category.Core concepts": {
+    "message": "Core concepts",
+    "description": "The label for category Core concepts in sidebar docs"
+  },
+  "sidebar.docs.category.Extensions": {
+    "message": "Extensions",
+    "description": "The label for category Extensions in sidebar docs"
+  },
+  "sidebar.docs.category.Hooks": {
+    "message": "Hooks",
+    "description": "The label for category Hooks in sidebar docs"
+  },
+  "sidebar.docs.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar docs"
+  },
+  "sidebar.docs.category.More": {
+    "message": "More",
+    "description": "The label for category More in sidebar docs"
+  },
+  "sidebar.docs.link.Storybook": {
+    "message": "Storybook",
+    "description": "The label for link Storybook in sidebar docs, linking to https://remirror.vercel.app/"
+  }
+}

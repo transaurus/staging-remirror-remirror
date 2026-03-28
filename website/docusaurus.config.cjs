@@ -7,6 +7,10 @@ const sectionize = require('remark-sectionize');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "zh-Hans"],
+  },
   title: 'Remirror',
   tagline: pkg.description,
   url: 'https://remirror.io',

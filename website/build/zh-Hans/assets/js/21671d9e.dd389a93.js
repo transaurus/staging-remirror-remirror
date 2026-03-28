@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[1824],{81664:e=>{e.exports=JSON.parse('{"label":"challenge","permalink":"/zh-Hans/blog/tags/challenge","allTagsPath":"/zh-Hans/blog/tags","count":1}')}}]);

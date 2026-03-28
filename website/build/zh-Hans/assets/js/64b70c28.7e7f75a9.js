@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7529],{21470:s=>{s.exports=JSON.parse('{"label":"prosemirror","permalink":"/zh-Hans/blog/tags/prosemirror","allTagsPath":"/zh-Hans/blog/tags","count":1}')}}]);

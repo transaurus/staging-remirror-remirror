@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[268],{89111:(e,s,t)=>{t.r(s),t.d(s,{default:()=>l});var c=t(7378);const l=()=>((0,c.useEffect)((()=>{window.location.replace("https://discord.gg/C4cfrMK")}),[]),null)}}]);

@@ -8255,13 +8255,6 @@ declare global {
 
 declare global {
   namespace Remirror {
-    interface ListenerProperties<Extension extends AnyExtension> {}
-  }
-}
-
-
-declare global {
-  namespace Remirror {
     /**
      * A utility type for all the globally available extension names. This is
      * mainly used to provide autocompletion.
@@ -8373,6 +8366,13 @@ declare global {
 
 // Make the abstract extension available but only as a type.
 export type { Extension };
+
+
+declare global {
+  namespace Remirror {
+    interface ListenerProperties<Extension extends AnyExtension> {}
+  }
+}
 
 
 declare global {

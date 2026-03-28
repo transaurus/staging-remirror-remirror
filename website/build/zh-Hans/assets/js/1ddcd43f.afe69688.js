@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2628],{79681:a=>{a.exports=JSON.parse('{"label":"chaining","permalink":"/zh-Hans/blog/tags/chaining","allTagsPath":"/zh-Hans/blog/tags","count":1}')}}]);
